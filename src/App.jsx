@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function App() {
   const [noButtonPosition, setNoButtonPosition] = useState({
-    top: "60%",
+    top: "70%",
     left: "50%",
   });
   const [showResult, setShowResult] = useState(false);
