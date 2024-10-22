@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 function App() {
   const [noButtonPosition, setNoButtonPosition] = useState({
-    top: "70%",
-    left: "60%",
+    top: "0%", // Initially positioned to be directly below the Yes button
+    left: "0%",
   });
   const [showResult, setShowResult] = useState(false);
 
@@ -49,11 +49,11 @@ function App() {
             <button
               className="bg-red-500 text-white px-8 py-2 rounded-full text-xl transition-all"
               style={{
-                position: "absolute",
+                position: "absolute", // Keep this for movement
                 top: noButtonPosition.top,
                 left: noButtonPosition.left,
               }}
-              onMouseEnter={moveNoButton}
+              onMouseEnter={moveNoButton} // Retain the hover effect for the "No" button
             >
               No
             </button>
