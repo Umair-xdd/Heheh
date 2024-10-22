@@ -46,20 +46,20 @@ function App() {
               Yes
             </button>
             {/* No Button */}
-            <button
-              className="bg-red-500 text-white px-8 py-2 rounded-full text-xl transition-all"
-              style={{
-                position: "absolute",
-                top: noButtonPosition.top,
-                left: noButtonPosition.left,
-              }}
-              onMouseEnter={moveNoButton}
-            >
-              No
-            </button>
           </div>
         </div>
       </div>
+      <button
+        className="bg-red-500 text-white px-8 py-2 rounded-full text-xl transition-all"
+        style={{
+          position: "absolute",
+          top: noButtonPosition.top,
+          left: noButtonPosition.left,
+        }}
+        onMouseEnter={moveNoButton}
+      >
+        No
+      </button>
 
       {showResult && (
         <div className="absolute text-center text-4xl text-pink-600 font-bold top-20">
